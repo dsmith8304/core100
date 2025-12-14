@@ -51,5 +51,27 @@ document.addEventListener('DOMContentLoaded', function() {
             );
         });
     }
+
+    // Investor World button functionality
+    const investorWorldBtn = document.getElementById('investor-world-btn');
+    const investorWorldUrl = 'https://core-100-investor-portfolio-tool-9zce1l4z5.vercel.app';
+    
+    if (investorWorldBtn) {
+        investorWorldBtn.addEventListener('click', function() {
+            // Open in a full-sized popup window
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+            const popupWidth = Math.min(1200, windowWidth * 0.9);
+            const popupHeight = windowHeight * 0.9;
+            const left = (windowWidth - popupWidth) / 2;
+            const top = (windowHeight - popupHeight) / 2;
+            
+            window.open(
+                investorWorldUrl,
+                'InvestorWorld',
+                `width=${popupWidth},height=${popupHeight},left=${left},top=${top},resizable=yes,scrollbars=yes`
+            );
+        });
+    }
 });
 

@@ -132,18 +132,28 @@ body {
 }
 
 /* Investor World */
-.investor-world-content {
-    background-color: #ffffff;
+.investor-world-button {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
     border-radius: 8px;
-    padding: 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s, transform 0.2s;
+    margin-top: 20px;
 }
 
-.investor-world-content p {
-    margin-top: 20px;
-    color: #666;
-    font-size: 1.1rem;
+.investor-world-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.investor-world-button:active {
+    transform: translateY(0);
 }
 
 /* Caprai Button */
